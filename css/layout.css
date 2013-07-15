@@ -23,7 +23,7 @@
  * License: http://www.myfonts.com/viewlicense?type=web&buildid=2379463
  * Webfonts copyright: Copyright (c) 2008 by Jos Buivenga/exljbris. All rights reserved.
  * 
- * © 2012 Bitstream Inc
+ * ï¿½ 2012 Bitstream Inc
 */
 
  @font-face {
@@ -85,9 +85,22 @@ body {
             border: none;
             /*color: #aaa;*/
         }
+        
+.pure-g-r.content-ribbon {
+	letter-spacing: normal;
+}
 				
 h1, h2, h3, h4, h5 {
 	font-family: 'Museo', sans-serif;
+	letter-spacing: normal;
+}
+
+.section-title {
+	color: #1797a2;
+	font-size: 3em;
+	font-weight: normal;
+	margin-bottom: .4em;
+	letter-spacing: -.02em;
 }
         
 .pure-menu.pure-menu-open.pure-menu-fixed {
@@ -107,9 +120,13 @@ h1, h2, h3, h4, h5 {
 .splash {
     margin: 2em auto 0;
     padding: 3em 0.5em;
-    background: #eee;
+		background: linear-gradient(135deg, #161F26 22px, #1A232D 22px, #1A232D 24px, transparent 24px, transparent 67px, #1A232D 67px, #1A232D 69px, transparent 69px),
+								linear-gradient(225deg, #161F26 22px, #1A232D 22px, #1A232D 24px, transparent 24px, transparent 67px, #1A232D 67px, #1A232D 69px, transparent 69px)0 64px;
+		background-color:#161F26;
+		background-size: 64px 128px;
 }
     .splash .splash-head {
+    		color: #FFF;
         font-size: 300%;
         margin: 0em 0;
         line-height: 1.2em;
@@ -123,6 +140,11 @@ h1, h2, h3, h4, h5 {
         font-size: 150%;
     }
 
+.content-wrap {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
 .content .content-subhead {
     color: #999;
     padding-bottom: 0.3em;
@@ -133,7 +155,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .content .content-ribbon {
-    margin: 3em;
+    margin: 3em auto 3em auto;
     border-bottom: 1px solid #eee;
 }
 
